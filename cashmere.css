@@ -58,7 +58,9 @@ body {
   margin:0;
   padding:0;
   background-color: black;
+  overflow: hidden;
 }
+
 .nav .logo{
   display: flex;
   flex-direction: row;
@@ -67,6 +69,7 @@ body {
   align-items: center;
   padding: 0;
 }
+
 .nav .logo .logo-icon{
   margin: 0px 2.5px 0px 5px;
   background-image: url('./logo.png');
@@ -76,14 +79,58 @@ body {
   min-height:40px;
   min-width: 40px;
 }
+
 .nav .logo .logo-text a{
   color: white;
   text-decoration: none;
   font-size: 21px;
 }
+
 .nav .logo .logo-text{
   margin: 10px 10px 10px 2.5px;
 }
+
+.nav .nav-button .dropdown{
+  overflow: hidden;
+}
+
+.nav .nav-button .dropdown .dropdown-btn{
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-size: 20px;
+  color: white;
+  margin: 10px 20px 10px 10px;
+}
+
+.nav .nav-button .dropdown .dropdown-content{
+  display: none;
+  position: absolute;
+  opacity: 0.7;
+  width: inherit;
+  background-color: #E5E5E5;
+  font-size: 18px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav .nav-button .dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  opacity: 1;
+  opacity: initial;
+  font-size: inherit;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 5px;
+  margin:0;
+}
+
+.nav .nav-button .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .nav .nav-buttons{
   display: flex;
   flex-direction: row;
@@ -91,14 +138,20 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+
 .nav .nav-buttons .nav-button a{
-  margin: 10px;
+  margin: 10px 20px 10px 10px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
 .nav .nav-buttons .nav-button a:hover{
   text-decoration: none;
   color: #E2E2E2;
+}
+
+.nav .nav-button .dropdown .dropdown-content a:hover {
+  color: orange;
 }
 
 .cashmere-splash{
@@ -166,7 +219,6 @@ body {
 	font-weight: normal;
 	font-size: 50px;
 	line-height: 74px;
-	/*margin: 10px 0px 10px 0px;*/
 }
 
 .description-parent .description-header{
