@@ -50,7 +50,7 @@ body {
   padding:0;
 }
 
-.nav {
+.nav-custom {
   height: 50px;
   display: flex;
   flex-direction: row
@@ -61,7 +61,7 @@ body {
   overflow: hidden;
 }
 
-.nav .logo{
+.nav-custom .logo{
   display: flex;
   flex-direction: row;
   flex-grow:1;
@@ -70,7 +70,7 @@ body {
   padding: 0;
 }
 
-.nav .logo .logo-icon{
+.nav-custom .logo .logo-icon{
   margin: 0px 2.5px 0px 5px;
   background-image: url('./logo.png');
   background-size: contain;
@@ -80,21 +80,21 @@ body {
   min-width: 40px;
 }
 
-.nav .logo .logo-text a{
+.nav-custom .logo .logo-text a{
   color: white;
   text-decoration: none;
   font-size: 21px;
 }
 
-.nav .logo .logo-text{
+.nav-custom .logo .logo-text{
   margin: 10px 10px 10px 2.5px;
 }
 
-.nav .nav-button .dropdown{
+.nav-custom .nav-button-custom .dropdown-custom{
   overflow: hidden;
 }
 
-.nav .nav-button .dropdown .dropdown-btn{
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-btn-custom{
   border: none;
   outline: none;
   background-color: inherit;
@@ -103,7 +103,7 @@ body {
   margin: 10px 20px 10px 10px;
 }
 
-.nav .nav-button .dropdown .dropdown-content{
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-content{
   display: none;
   position: absolute;
   opacity: 0.7;
@@ -114,7 +114,7 @@ body {
   z-index: 1;
 }
 
-.nav .nav-button .dropdown .dropdown-content a {
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-content a {
   float: none;
   color: black;
   opacity: 1;
@@ -127,11 +127,11 @@ body {
   margin:0;
 }
 
-.nav .nav-button .dropdown:hover .dropdown-content {
+.nav-custom .nav-button-custom .dropdown-custom:hover .dropdown-content {
   display: block;
 }
 
-.nav .nav-buttons{
+.nav-custom .nav-buttons-custom{
   display: flex;
   flex-direction: row;
   flex-grow:1;
@@ -139,18 +139,18 @@ body {
   align-items: center;
 }
 
-.nav .nav-buttons .nav-button a{
+.nav-custom .nav-buttons-custom .nav-button-custom a{
   margin: 10px 20px 10px 10px;
   font-size: 20px;
   text-decoration: none;
   color: white;
 }
-.nav .nav-buttons .nav-button a:hover{
+.nav-custom .nav-buttons-custom .nav-button-custom a:hover{
   text-decoration: none;
   color: #E2E2E2;
 }
 
-.nav .nav-button .dropdown .dropdown-content a:hover {
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-content a:hover {
   color: orange;
 }
 
