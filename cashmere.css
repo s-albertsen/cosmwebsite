@@ -281,7 +281,29 @@ body {
 	line-height: 44px;
 }
 
-/*.carousel { not now }*/
+/* .carousel-parent {
+	height: 50px;
+	width: 100%;
+	padding: 75px 0px 75px 0px;
+	background-color: black;
+} */
+.carousel-inner {
+	background-color: black;
+}
+
+/* .carousel-item img {
+	max-height: 500px; /* input your desired height here */
+  /* } */
+
+/* .carouselExampleIndicators {
+	height: 50px;
+} */
+
+.w-100 {
+	object-fit: contain;
+	width: 100% !important;
+	height: 75vh;
+  }
 
 .description-parent .description-body .price-intro p{
 	font-family: Nunito;
