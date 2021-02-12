@@ -311,13 +311,24 @@ body {
 	/* margin: 0px 0px 0px 0px; */
 	height: 100px;
 	position: absolute;
-	bottom: 8px;
+	bottom: 0px;
 	right: 16px;
 }
 
 .carousel-caption-box p {
 	color: white;
 }
+
+/* FOR TEXT FITTING SHADING */
+/* .carousel-caption p {
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	box-sizing:border-box;
+	padding: 0px;
+	margin: 0px;
+	clear:both;
+	float:center;
+} */
 
 .w-100 {
 	object-fit: contain;
