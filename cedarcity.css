@@ -20,12 +20,12 @@ body {
 }
 
 h1 {
-  color: white;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  margin: 0px;
+  color: white !important;
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 96px !important;
+  margin: 0px !important;
 }
 
 h2 {

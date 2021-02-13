@@ -4,12 +4,12 @@
 }
 
 h1 {
-  color: white;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  margin: 0px;
+  color: white !important;
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 90px !important;
+  margin: 0px 0px 10px 0px !important;
 }
 h2 {
   color: black;
@@ -204,7 +204,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
 }
 .description-parent .page-header {
 	display: flex;
@@ -281,13 +281,31 @@ body {
 	line-height: 44px;
 }
 
-/* .carousel-parent {
-	height: 50px;
-	width: 100%;
-	padding: 75px 0px 75px 0px;
-	background-color: black;
-} */
+.carousel-preface {
+  	display: flex;
+  	justify-content: flex-end;
+  	margin: 5
+  	px 15px 0px 0px;
+  	padding: 0px;
+  }
+
+.carousel-preface p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+
+ .carousel-parent {
+ 	margin-bottom: 40px;
+}
+
 .carousel-inner {
+	background-color: black;
+}
+
+.carousel-inner1 {
 	background-color: black;
 }
 
@@ -302,6 +320,11 @@ body {
 .carousel-item {
 	padding: 0px;
 }
+
+/*.carousel-item1 {
+	padding: 0px;
+}*/
+
 .carousel-caption-box {
 	display: flex;
 	justify-content: center;
@@ -335,6 +358,7 @@ body {
 	width: 100% !important;
 	height: 75vh;
   }
+
 
 .description-parent .description-body .price-intro p{
 	font-family: Nunito;
