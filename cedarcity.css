@@ -20,12 +20,12 @@ body {
 }
 
 h1 {
-  color: white;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  margin: 0px;
+  color: white !important;
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 96px !important;
+  margin: 0px !important;
 }
 
 h2 {
@@ -156,11 +156,10 @@ h3 {
 .nav .nav-button .dropdown .dropdown-content a:hover {
   color: orange;
 }
-
 .cedarcity-splash{
 	display: flex;
 	flex-direction: column;
-  	min-height: 100%;
+  min-height: 100%;
 	max-height: 100%;
 	height: 100%;
 	width: 100%;
@@ -190,7 +189,7 @@ h3 {
 	font-size: 35px;
 	line-height: 52px;
 	margin:0;
-  	padding:0;
+  padding:0;
 }
 
 .cedarcity-splash .splash-gradient{
@@ -272,10 +271,52 @@ h3 {
 }
 
 .description-parent .description-text ul.bullets{
-  	list-style-type: circle;
-	list-style-position: outside;
+  	list-style-type: disc;
   	margin: 20px 0px 20px 50px;
   	padding: 0px 0px 0px 10px;
+}
+
+sup{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+ .carousel-parent {
+  margin-bottom: 40px;
+}
+
+.carousel-inner {
+  background-color: black;
+}
+
+.carousel-inner1 {
+  background-color: black;
+}
+
+
+.carousel-item {
+  padding: 0px;
+}
+
+.carousel-caption-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* margin: 0px 0px 0px 0px; */
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 16px;
+}
+
+.carousel-caption-box p {
+  color: white;
 }
 
 .description-parent .description-text ul li{
@@ -287,9 +328,10 @@ h3 {
 }
 
 .footer{
-  height: 100px;
+  height: 100px !important;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   background-color: black;
   margin:0;
@@ -299,10 +341,11 @@ h3 {
 .footer .logo{
   display: flex;
   flex-direction: row;
-  flex-grow:1;
+/*  flex-grow:1;*/
   justify-content: flex-start;
   align-items: center;
   padding: 0;
+  margin-left: 5px;
 }
 
 .footer .logo .logo-icon{
@@ -322,18 +365,77 @@ h3 {
 }
 
 .footer .logo .logo-text{
-  margin: 10px 10px 10px 2.5px;
+  margin: 10px 150px 10px 2.5px;
   font-size:21px;
+}
+
+.footer .contact-button {
+/*  background-color: green;*/
+/*  display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  max-height: 100px;
+}
+
+.footer .contact-button .email-header{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.footer .contact-button .email-header p{
+  margin: 8px 0px 8px 0px !important;
+  color: white;
+  P
+}
+
+.footer .contact-button .email-box{
+  display: flex;
+  align-content: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer .contact-button .email-box .email-address p{
+  margin: 7px 7px 7px 7px;
+  border-style: inset;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 20px;
+
+  font-family: Nunito;
+  font-size: 14px;
+  color: grey;
+}
+
+.footer .contact-button .email-box .email-submit{
+  display: flex;
+  align-content: center;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.footer .contact-button .email-box .email-submit p{
+  margin: 0px;
+  color: white;
 }
 
 .footer .contact-text{
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0px;
+  margin-right: 5px;
+  margin-top: 6px;
 }
 
 .footer .contact-text p{
   margin: 2.5px;
-  color: white;
+  color: grey;
+}
+
+.footer .contact-text p.contact-email{
+  margin: 2.5px 2.5px 0px 2.5px;
+  font-size: 14px;
+  font-family: Nunito;
+  color: grey;
 }

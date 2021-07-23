@@ -4,12 +4,12 @@
 }
 
 h1 {
-  color: white;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  margin: 0px;
+  color: white !important;
+  font-family: Oswald !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 90px !important;
+  margin: 0px 0px 10px 0px !important;
 }
 h2 {
   color: black;
@@ -50,7 +50,7 @@ body {
   padding:0;
 }
 
-.nav {
+.nav-custom {
   height: 50px;
   display: flex;
   flex-direction: row
@@ -61,7 +61,7 @@ body {
   overflow: hidden;
 }
 
-.nav .logo{
+.nav-custom .logo{
   display: flex;
   flex-direction: row;
   flex-grow:1;
@@ -70,7 +70,7 @@ body {
   padding: 0;
 }
 
-.nav .logo .logo-icon{
+.nav-custom .logo .logo-icon{
   margin: 0px 2.5px 0px 5px;
   background-image: url('./logo.png');
   background-size: contain;
@@ -80,21 +80,21 @@ body {
   min-width: 40px;
 }
 
-.nav .logo .logo-text a{
+.nav-custom .logo .logo-text a{
   color: white;
   text-decoration: none;
   font-size: 21px;
 }
 
-.nav .logo .logo-text{
+.nav-custom .logo .logo-text{
   margin: 10px 10px 10px 2.5px;
 }
 
-.nav .nav-button .dropdown{
+.nav-custom .nav-button-custom .dropdown-custom{
   overflow: hidden;
 }
 
-.nav .nav-button .dropdown .dropdown-btn{
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-btn-custom{
   border: none;
   outline: none;
   background-color: inherit;
@@ -103,7 +103,7 @@ body {
   margin: 10px 20px 10px 10px;
 }
 
-.nav .nav-button .dropdown .dropdown-content{
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-content{
   display: none;
   position: absolute;
   opacity: 0.7;
@@ -114,7 +114,7 @@ body {
   z-index: 1;
 }
 
-.nav .nav-button .dropdown .dropdown-content a {
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-content a {
   float: none;
   color: black;
   opacity: 1;
@@ -127,11 +127,11 @@ body {
   margin:0;
 }
 
-.nav .nav-button .dropdown:hover .dropdown-content {
+.nav-custom .nav-button-custom .dropdown-custom:hover .dropdown-content {
   display: block;
 }
 
-.nav .nav-buttons{
+.nav-custom .nav-buttons-custom{
   display: flex;
   flex-direction: row;
   flex-grow:1;
@@ -139,25 +139,25 @@ body {
   align-items: center;
 }
 
-.nav .nav-buttons .nav-button a{
+.nav-custom .nav-buttons-custom .nav-button-custom a{
   margin: 10px 20px 10px 10px;
   font-size: 20px;
   text-decoration: none;
   color: white;
 }
-.nav .nav-buttons .nav-button a:hover{
+.nav-custom .nav-buttons-custom .nav-button-custom a:hover{
   text-decoration: none;
   color: #E2E2E2;
 }
 
-.nav .nav-button .dropdown .dropdown-content a:hover {
+.nav-custom .nav-button-custom .dropdown-custom .dropdown-content a:hover {
   color: orange;
 }
 
 .cashmere-splash{
 	display: flex;
 	flex-direction: column;
-  	min-height: 100%;
+  min-height: 100%;
 	max-height: 100%;
 	height: 100%;
 	width: 100%;
@@ -180,6 +180,17 @@ body {
 	font-style: normal;
 	font-weight: normal;
 }
+
+p.space{
+	align-content: center;
+	margin: 0px 0px 2px 30px;
+	color: black;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
 .cashmere-splash .location-description p{
 	justify-content: center;
 	font-color: white;
@@ -204,7 +215,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
 }
 .description-parent .page-header {
 	display: flex;
@@ -266,6 +277,15 @@ body {
   	padding: 0px 0px 0px 10px;
 }
 
+sup{
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+  margin: 0px;
+  padding: 0px;
+}
+
 .description-parent .description-text ul.bullets{
   	list-style-type: circle;
 	list-style-position: outside;
@@ -281,13 +301,32 @@ body {
 	line-height: 44px;
 }
 
-/* .carousel-parent {
-	height: 50px;
-	width: 100%;
-	padding: 75px 0px 75px 0px;
-	background-color: black;
-} */
+.carousel-preface {
+  	display: flex;
+  	justify-content: flex-end;
+  	margin: 5px 15px 0px 0px;
+  	padding: 0px;
+  }
+
+.carousel-preface p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+}
+
+
+ .carousel-parent {
+ 	margin-bottom: 40px;
+}
+
 .carousel-inner {
+	background-color: black;
+}
+
+.carousel-inner1 {
 	background-color: black;
 }
 
@@ -302,6 +341,11 @@ body {
 .carousel-item {
 	padding: 0px;
 }
+
+/*.carousel-item1 {
+	padding: 0px;
+}*/
+
 .carousel-caption-box {
 	display: flex;
 	justify-content: center;
@@ -335,6 +379,7 @@ body {
 	width: 100% !important;
 	height: 75vh;
   }
+
 
 .description-parent .description-body .price-intro p{
 	font-family: Nunito;
@@ -461,9 +506,10 @@ p.small {
 }
 
 .footer{
-  height: 100px;
+  height: 100px !important;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   background-color: black;
   margin:0;
@@ -473,10 +519,11 @@ p.small {
 .footer .logo{
   display: flex;
   flex-direction: row;
-  flex-grow:1;
+/*  flex-grow:1;*/
   justify-content: flex-start;
   align-items: center;
   padding: 0;
+  margin-left: 5px;
 }
 
 .footer .logo .logo-icon{
@@ -496,19 +543,77 @@ p.small {
 }
 
 .footer .logo .logo-text{
-  margin: 10px 10px 10px 2.5px;
+  margin: 10px 150px 10px 2.5px;
   font-size:21px;
+}
+
+.footer .contact-button {
+/*  background-color: green;*/
+/*  display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  max-height: 100px;
+}
+
+.footer .contact-button .email-header{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.footer .contact-button .email-header p{
+  margin: 8px 0px 8px 0px !important;
+  color: white;
+  P
+}
+
+.footer .contact-button .email-box{
+  display: flex;
+  align-content: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer .contact-button .email-box .email-address p{
+  margin: 7px 7px 7px 7px;
+  border-style: inset;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 20px;
+
+  font-family: Nunito;
+  font-size: 14px;
+  color: grey;
+}
+
+.footer .contact-button .email-box .email-submit{
+  display: flex;
+  align-content: center;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.footer .contact-button .email-box .email-submit p{
+  margin: 0px;
+  color: white;
 }
 
 .footer .contact-text{
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0px;
+  margin-right: 5px;
+  margin-top: 6px;
 }
 
 .footer .contact-text p{
   margin: 2.5px;
-  color: white;
+  color: grey;
 }
 
+.footer .contact-text p.contact-email{
+  margin: 2.5px 2.5px 0px 2.5px;
+  font-size: 14px;
+  font-family: Nunito;
+  color: grey;
+}

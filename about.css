@@ -155,14 +155,16 @@ body {
 }
 
 .about-splash {
+/*	background-size: auto 100%;*/
+
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
-	height: 95%;
-	min-height: 95%;
-	max-height: 95%;
+	height: 100vh;
 	width: 100%;	
 	flex-direction: column;
 	justify-content: space-between;
-	background-image: url('./imgs/about_page/about_splash.png');
+	background-image: url('./imgs/about_page/splash.png');
 }
 
 .about-splash .greeting{ 
@@ -252,10 +254,23 @@ p.bottom-text{
 	border-bottom: 1px solid black;
 }
 
-.team-header{
-	align-self: center;
+/*.team-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 	margin-bottom: 15px;
+}*/
+
+p.title{
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	height: 32px;
+	max-height: 32px;
+	font-size: 22px;
+	margin: 10px 0px 15px 0px;
 }
+
 .team-pics{
 	display: flex;
 	flex-direction: row;
@@ -268,6 +283,7 @@ p.bottom-text{
 .content-box{
 	display: flex;
 	flex-grow:1;
+	align-content: flex-start;
 	padding: 0px;
 /*	margin: 0px 0px 0px 50px;*/
 	min-width: 300px;
@@ -295,6 +311,15 @@ p.bio {
 	margin: 15px 0px 0px 0px;
 }
 
+p.bio a:link{
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 15px 0px 0px 0px;
+}
+
 .sam-pic{
 	background-repeat: no-repeat;
 	display: flex;
@@ -309,23 +334,12 @@ p.bio {
 	background-repeat: no-repeat;
 	display: flex;
 	flex-grow:1;
-	padding: 0px;
-	margin: 0px 50px 0px 0px;
+/*	padding: 0px;
+	margin: 0px 50px 0px 0px;*/
 	background-size: contain;
 	min-width: 300px;
 	min-height: 300px;
 	background-image: url('./imgs/about_page/sean_headshot.png');
-}
-
-p.partners{
-	margin-top: 35px; 
-	margin-bottom: 0px; 
-
-	color: black;
-	font-family: Oswald;
-	font-style: normal;
-	font-weight: normal;
-    font-size: 28px;
 }
 
 .jeremy-pic{
@@ -341,8 +355,17 @@ p.partners{
 }
 
 .advisors-header {
-	margin: 30px 0px 15px 0px;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	/*margin: 30px 0px 15px 0px;*/
+/*	margin: 0px;*/
 	align-self: center;
+}
+
+.advisors-header p{
+	margin: 30px 0px 15px 0px;
 }
 
 .charlie-pic{
@@ -381,4 +404,113 @@ p.partners{
 
 
 
+.footer{
+  height: 100px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  width: 100%;
+  background-color: black;
+  margin-top:20px;
+  padding:0;
+}
+
+.footer .logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.footer .logo .logo-icon{
+  margin: 0px 2.5px 0px 5px;
+  background-image: url('./logo.png');
+  background-size: contain;
+  height:40px;
+  width: 40px;
+  min-height:40px;
+  min-width: 40px;
+}
+
+.footer .logo .logo-text a{
+  color: white;
+  text-decoration: none;
+  font-size:21px;
+}
+
+.footer .logo .logo-text{
+  margin: 10px 150px 10px 2.5px;
+  font-size:21px;
+}
+
+.footer .contact-button {
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  max-height: 100px;
+}
+
+.footer .contact-button .email-header{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.footer .contact-button .email-header p{
+  margin: 8px 0px 8px 0px !important;
+  color: white;
+  P
+}
+
+.footer .contact-button .email-box{
+  display: flex;
+  align-content: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer .contact-button .email-box .email-address p{
+  margin: 7px 7px 7px 7px;
+  border-style: inset;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 20px;
+
+  font-family: Nunito;
+  font-size: 14px;
+  color: grey;
+}
+
+.footer .contact-button .email-box .email-submit{
+  display: flex;
+  align-content: center;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.footer .contact-button .email-box .email-submit p{
+  margin: 0px;
+  color: white;
+}
+
+.footer .contact-text{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-right: 5px;
+  margin-top: 6px;
+}
+
+.footer .contact-text p{
+  margin: 2.5px;
+  color: grey;
+}
+
+.footer .contact-text p.contact-email{
+  margin: 2.5px 2.5px 0px 2.5px;
+  font-size: 14px;
+  font-family: Nunito;
+  color: grey;
+}
 
